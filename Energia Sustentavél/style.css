@@ -1,0 +1,106 @@
+/*Personalização do Corpo do html*/
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    color:rgb(105, 105, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:100%;
+    margin: 0;
+}
+
+.central {
+    text-align: center;
+}
+
+.marcador_verde{
+  background-color: #0a885a;
+  height: 80%;
+  padding: 2px;
+  border-radius: 20px;
+  margin: auto;
+  width: 80%;
+}
+.marcador_amarelo{
+  background-color: #f3dc11;
+  height: 80%;
+  padding: 2px;
+  border-radius: 20px;
+  margin: 5px;
+  width: 80%;
+}
+
+
+
+.tabelaCalc {
+  width: 80%;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.header{
+  display:inline-block;
+}
+
+fieldset{
+  border: none;
+  padding:2rem 0;
+  border-bottom:4px solid #ffd000;
+}
+select{
+  border-radius: 20px;
+  padding:0 5px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+option{
+  font-family:italic;
+  font-size: 17px;
+}
+/* Adicionar uma cor de fundo preta à barra de navegação */
+.topnav {
+    background-color: #2d9c65;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 35px;
+    margin: 0px 5px;
+}
+  
+  /* Estilizar os links dentro da barra de navegação */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  /* Mudar a cor dos links ao passar o mouse */
+.topnav a:hover {
+    background-color: #ddd;
+    color: rgb(0, 139, 46);
+}
+  
+  /* Adicionar uma classe ativa para destacar a página atual */
+.topnav a.active {
+    background-color: #0a885a;
+    color: white;
+}
+
+.nome_item{
+  margin:auto;
+}
+.titulo-item {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 0;
+ 
+}
