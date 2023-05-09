@@ -6,6 +6,7 @@
     <script src="script.js"></script>
     <title>Consumo Mensal</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!--Menu site-->
@@ -23,14 +24,13 @@
    </div>
 
 <!--Inserindo Itens para Calculo-->
-<div class="tabelaCalc">
-<fieldset>
-    <!--Lâmpada-->
-        <div class="item">
-            <div class="titulo-item"><label class="nome_item">Lâmpadas</label></div>
-            <img  src="./Imagens/Lampada_ico_consumo.png" width="100px">
-            <input type="number" placeholder="Número de Lâmpadas" id="QLamp"> <input id="ULamp" type="number" placeholder="Média Ligada por dia">
-                <select id="Lconsumo">
+<div class="conteudoI">
+<div class="itens">
+<div class="Box-item">   
+        <div class="More-item">
+            <img src="Imagens/Lampada_ico_consumo.png" width="100px">
+            <input type="number" placeholder="Quantidade" id="QLamp"> <input id="ULamp" type="number" placeholder="Média Ligada por dia">
+            <select id="Lconsumo">
                     <option value="">Incandescente</option>
                     <option value="20">20W</option>
                     <option value="45">45W</option>
@@ -47,14 +47,25 @@
                     <option value="10">10W</option>
                     <option value="12">12W</option>
                 </select>
+        </div>
+</div>
+<div class="Box-item">
+    <div class="More-item">
+        <img src="./Imagens/Geladeira_ico_consumo.png" width="100px">
+        <input type="number" id="QGela" placeholder="Número de Geladeiras">
+        <input type="number" id="UGela" placeholder="Média ligada por dia">
+        <select id="Gconsumo">
+            <option value="15">10-20Kwh/Mes</option>
+            <option value="30">20-40Kwh/Mes</option>
+            <option value="50">40-60Kwh/Mes</option>
+            <option value="65">60-70Kwh/mes</option>
+        </select>
     </div>
-</fieldset>
-<fieldset>
-    <!--TVs-->
-    <div class="item">
-        <div class="titulo-item"><label class="nome_item">TVs</label></div>
+</div>
+<div class="Box-item">
+    <div class="More-item">
         <img  src="./Imagens/Tv_ico_consumo.png" width="100px">
-        <label><input type="number" placeholder="Número de TVs"  id="QTv"></label><label><input type="number" id="UTv" placeholder="Média ligada por dia"></label>
+        <label><input type="number" placeholder="Quantidade"  id="QTv"></label><label><input type="number" id="UTv" placeholder="Média ligada por dia"></label>
                 <select id="Tconsumo">
                     <option value="">Consumo</option>
                     <option value="60">40-70W</option>
@@ -68,24 +79,28 @@
                     <option  value="457" >330-584W</option>
             </select>
     </div>
-</fieldset>
-<fieldset>
-    <!--Geladeira-->
-    <div class="item"></div>
-        <div class="titulo-item"><label class="nome_item">Geladeiras</label></div>
-        <img src="./Imagens/Geladeira_ico_consumo.png" width="100px">
-        <input type="number" id="QGela" placeholder="Número de Geladeiras">
-        <input type="number" id="UGela" placeholder="Média ligada por dia">
-        <select id="Gconsumo">
-            <option value="15">10-20Kwh/Mes</option>
-            <option value="30">20-40Kwh/Mes</option>
-            <option value="50">40-60Kwh/Mes</option>
-            <option value="65">60-70Kwh/mes</option>
-        </select>
-</fieldset>
-<label for="resultado">Resultado:</label>
-<input type="number" id="resultado" disabled><br>
-<button onclick="FEnergia()">Amongus</button>
 </div>
-</body>
-</html>
+    <div class="Box-item">
+        <div class="More-item">
+            <img src="./Imagens/ArCondicionado_ico_consumo.png" width="90px" style="margin: 14px auto;">
+         
+            <input type="number" id="QAr" placeholder="Quantidade">
+            <input type="number" id="UAr" placeholder="Média ligada por dia">
+            <select id="Aconsumo">
+                <option value="15">10-20Kwh/Mes</option>
+                <option value="30">20-40Kwh/Mes</option>
+                <option value="50">40-60Kwh/Mes</option>
+                <option value="65">60-70Kwh/mes</option>
+            </select>
+
+        </div>
+</div>
+</div>
+</div>
+    <div class="butoncenter">
+    <button onclick="FEnergia()">ϟ</button>
+    <div class="resposta">
+    <input disabled id="resultado" type="text" class="respostaF">
+    </div>
+</div>
+</div> 
